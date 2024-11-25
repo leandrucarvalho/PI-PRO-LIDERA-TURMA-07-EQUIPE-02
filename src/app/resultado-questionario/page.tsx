@@ -64,12 +64,7 @@ function ResultadoContent() {
       doc.addImage(base64Image, "PNG", 0, 0, 297, 210, undefined, "FAST");
       doc.setFontSize(32).setFont("helvetica", "bold");
       doc.text(userName, 148, 120, { align: "center" });
-<<<<<<< HEAD
-      doc.setFontSize(12);
-      doc.text(`${resultCategoryFromQuery}.`, 92, 164, {
-=======
       doc.setFontSize(12).text(resultCategoryFromQuery, 92, 164, {
->>>>>>> 983f6c83e7922057b9fd05f2caa73b2575551342
         align: "center",
         maxWidth: 270,
       });
