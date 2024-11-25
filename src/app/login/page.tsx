@@ -90,46 +90,6 @@ export default function Login() {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen">
-<<<<<<< HEAD
-      <section className="hidden md:flex w-1/2 relative">
-        <Image
-          src={image}
-          alt="Imagem de Login"
-          fill
-          className="object-cover bg-no-repeat"
-        />
-        <div className="absolute inset-0 bg-[rgba(0,0,0,0.65)]"></div>
-      </section>
-      <section className="w-full md:w-1/2 flex flex-col items-center justify-center p-6 sm:p-8 md:p-12 lg:p-16">
-        <div className="flex flex-col items-center gap-5 w-full max-w-md">
-          <h1 className="font-bold text-primary text-lg md:text-xl max-sm: pt-20 max-sm:mb-1">
-            FAZER LOGIN
-          </h1>
-          <Input
-            type="email"
-            placeholder="E-mail"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className={`border w-full ${
-              errors.email ? "border-red-500" : "border-black"
-            }`}
-            required
-          />
-          {errors.email && <p className="text-red-500">{errors.email}</p>}
-          <Input
-            type="password"
-            placeholder="Senha"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className={`border w-full ${
-              errors.password ? "border-red-500" : "border-black"
-            }`}
-            required
-          />
-          {errors.password && <p className="text-red-500">{errors.password}</p>}
-          <div className="w-full">
-            <Link href={"/instrucoes"}>
-=======
       {isLoading ? (
         <div className="flex flex-col justify-center items-center text-center text-lg font-semibold w-full">
           Enviando... Aguarde.
@@ -182,7 +142,6 @@ export default function Login() {
               {errors.password && <p className="text-red-500">{errors.password}</p>}
 
               {/* Botão de Login */}
->>>>>>> 983f6c83e7922057b9fd05f2caa73b2575551342
               <CustomButton
                 className="w-full flex items-center justify-center gap-x-3 shadow-lg"
                 onClick={handleSubmit}
@@ -198,38 +157,11 @@ export default function Login() {
               </div>
               <Separator className="border border-primary my-4" />
 
-<<<<<<< HEAD
-          <h2 className="text-textColor">
-            Quero acessar com minhas redes sociais
-          </h2>
-
-          <CustomButton
-            className="w-full flex items-center justify-center gap-x-3 shadow-lg bg-opacity-60"
-            onClick={handleLoginGoogle}
-          >
-            <FcGoogle /> Google
-          </CustomButton>
-          <CustomButton
-            className="w-full flex items-center justify-center gap-x-3 shadow-lg bg-opacity-60"
-            onClick={() => {}}
-          >
-            <FaFacebook className="text-[#1d2c4c]" /> Facebook
-          </CustomButton>
-          <div className="flex flex-col items-center gap-2 md:flex-row md:justify-center md:gap-3 ">
-            <h2 className="text-textColor text-center">
-              Novo no PRO Lidera Skills?
-            </h2>
-            <Link href={"/cadastro"}>
-              <CustomButton
-                onClick={() => {}}
-                className="text-primary bg-transparent hover:text-white lg:w-40 max-sm:text-sm"
-=======
               {/* Login com Redes Sociais */}
               <h2 className="text-textColor">Quero acessar com minhas redes sociais</h2>
               <CustomButton
                 className="w-full flex items-center justify-center gap-x-3 shadow-lg bg-opacity-60"
                 onClick={handleLoginGoogle}
->>>>>>> 983f6c83e7922057b9fd05f2caa73b2575551342
               >
                 <FcGoogle /> Google
               </CustomButton>

@@ -15,17 +15,12 @@ type ToasterToast = ToastProps & {
   action?: ToastActionElement;
 };
 
-<<<<<<< HEAD
 type ActionType = {
   ADD_TOAST: "ADD_TOAST";
   UPDATE_TOAST: "UPDATE_TOAST";
   DISMISS_TOAST: "DISMISS_TOAST";
   REMOVE_TOAST: "REMOVE_TOAST";
 };
-=======
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-type ActionType = "ADD_TOAST" | "UPDATE_TOAST" | "DISMISS_TOAST" | "REMOVE_TOAST";
->>>>>>> 983f6c83e7922057b9fd05f2caa73b2575551342
 
 let count = 0;
 
