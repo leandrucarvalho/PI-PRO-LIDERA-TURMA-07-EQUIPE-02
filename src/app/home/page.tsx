@@ -14,7 +14,7 @@ export default function HomePage() {
 
         <div className="relative text-white text-justify w-11/12 sm:w-3/4 md:w-[50%] lg:w-[35%] flex flex-col justify-center items-center gap-8 p-4 md:p-0 top-1/3 -translate-y-full z-10">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--primary-color)] mb-4 text-center">
-            Descubra seu potencial! TESTANDO VERCEL
+            Descubra seu potencial!
           </h2>
 
           <p className="text-white text-base sm:text-lg lg:text-xl font-semibold text-[var(--text-color)] mb-4 sm:mb-8 text-center">
@@ -26,14 +26,14 @@ export default function HomePage() {
             <Link href={"/cadastro"}>
               <CustomButton
                 className="w-32 sm:w-40 bg-opacity-60"
-                onClick={() => {}}
+                onClick={() => { }}
               >
                 Criar Conta
               </CustomButton>
             </Link>
 
             <Link href={"/login"}>
-              <CustomButton className="w-32 sm:w-40" onClick={() => {}}>
+              <CustomButton className="w-32 sm:w-40" onClick={() => { }}>
                 Entrar
               </CustomButton>
             </Link>
