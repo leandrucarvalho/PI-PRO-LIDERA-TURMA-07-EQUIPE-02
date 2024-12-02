@@ -20,7 +20,7 @@ export function Header() {
       <nav className="flex items-center justify-between h-16 max-w-[1240px] mx-auto px-4">
         <div className="flex items-center text-[#4d4d4d]">
           <Image
-            className="w-[8vh] h-[8vh] max-sm:w-[5vh] max-sm:h-[5vh]"
+            className="w-[5vh] h-[5vh] max-sm:w-[5vh] max-sm:h-[5vh]"
             src={logo}
             alt="logo"
           />
@@ -29,9 +29,8 @@ export function Header() {
           </h1>
         </div>
         <ul
-          className={`flex items-center list-none gap-8 max-sm:flex-col max-sm:absolute max-sm:bg-[var(--background-color)] max-sm:w-full max-sm:top-16 max-sm:left-0 max-sm:z-10 max-sm:shadow-md transition-all duration-300 ${
-            isMenuOpen ? "block" : "hidden"
-          } sm:flex`}
+          className={`flex items-center list-none gap-8 max-sm:flex-col max-sm:absolute max-sm:bg-[var(--background-color)] max-sm:w-full max-sm:top-16 max-sm:left-0 max-sm:z-10 max-sm:shadow-md transition-all duration-300 ${isMenuOpen ? "block" : "hidden"
+            } sm:flex`}
         >
           <li>
             <Link
@@ -79,9 +78,8 @@ export function Header() {
             <Switch
               id="airplane-mode"
               onClick={() => setIsActive(!isActive)}
-              className={`peer inline-flex ${
-                isActive ? "bg-primary" : "bg-textColor border-textColor"
-              }`}
+              className={`peer inline-flex ${isActive ? "bg-primary" : "bg-textColor border-textColor"
+                }`}
             />
             <span className="font-bold">Acessibilidade</span>
             <TbAccessible />

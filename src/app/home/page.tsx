@@ -8,11 +8,11 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <main>
-      <section className="relative w-full h-screen bg-cover flex items-center justify-center">
+      <section className="relative w-full h-screen md:h-[80vh] bg-cover flex items-center justify-center">
         <Image src={image} alt="Image" fill className="object-cover" />
         <div className="absolute inset-0 bg-[rgba(0,0,0,0.65)]"></div>
 
-        <div className="relative text-white text-justify w-11/12 sm:w-3/4 md:w-[50%] lg:w-[35%] flex flex-col justify-center items-center gap-8 p-4 md:p-0 top-1/3 -translate-y-full z-10">
+        <div className="relative text-white text-justify w-11/12 sm:w-3/4 md:w-[50%] lg:w-[35%] flex flex-col justify-center items-center gap-8 p-4 md:p-0">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--primary-color)] mb-4 text-center">
             Descubra seu potencial!
           </h2>

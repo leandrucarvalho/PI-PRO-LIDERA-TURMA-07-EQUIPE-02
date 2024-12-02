@@ -26,10 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${balooFont.variable}  antialiased h-auto`}>
+      <body className={`${balooFont.variable} antialiased min-h-screen flex flex-col`}>
         <UserProvider>
           <Header />
-          {children}
+          <main className="flex-grow">{children}</main>
           <Toaster />
           <Footer />
         </UserProvider>

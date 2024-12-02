@@ -5,14 +5,14 @@ import { CiLocationOn } from "react-icons/ci";
 
 export function Footer() {
   return (
-    <footer className="flex flex-col bg-white pt-6 pl-6 h-28 max-sm:h-1/2">
+    <footer className="flex flex-col  bg-white pt-6 pl-6 h-28 max-sm:h-1/2">
       <div id="footer">
         <h2 className="text-xl font-bold max-sm:hidden">Contato</h2>
         <div className="flex gap-8 justify-around items-center max-sm:mb-4">
           <div className="flex items-center justify-center gap-2 max-sm:cursor-pointer">
             <FaWhatsapp className="text-xl max-sm:size-8 max-sm:bg-slate-200 max-sm:border-2 border-black max-sm:rounded max-sm:p-1" />
             <p>
-            <a href="https://wa.me/+1234567890" className="text-gray-700 max-sm:hidden ">
+              <a href="https://wa.me/+1234567890" className="text-gray-700 max-sm:hidden ">
                 +55 81 xxxxx-xxxx
               </a>
             </p>
